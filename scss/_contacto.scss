@@ -1,0 +1,60 @@
+.contenedor-contacto{
+        @include flex(column);
+        .titulo-contenedor{
+                background-color: $darkPink;
+                
+                .contacto-titulo-general{
+                        font-size: $textXxl;
+                        margin: auto;
+                        padding: 1rem 0;
+                        text-align: center;
+                }
+        }
+        .contacto{
+                @include flex(column,center);
+                background-color: $pink;
+                .mensaje-contenedor{
+                        @include flex(column,null,center);
+                        .contacto__titulo{
+                                font-size: $textSm;
+                                text-align: center;
+                                padding: 3rem;
+                        }
+                        .contacto__formulario{
+                                width: 70%;
+                                margin: 1rem auto;
+                                .contacto__input{
+                                        width: 100%;
+                                        margin:0.5rem auto;
+                                        padding: 1.2rem;
+                                        &::placeholder{
+                                                font-size: $textSm;
+                                        }
+                                }
+                                .contacto__input--size{
+                                        width: 50%;
+                                }
+                        }
+                }
+                .ubicacion{
+                        @include flex(column,center);
+                        .ubicacion__titulo{
+                                font-size: $textSm;
+                                padding: 3rem;
+                                text-align: center;
+                        }
+                        .ubicacion__mapa{
+                                margin:  1rem auto;
+                                @include flex(column,center);
+                        }
+                        .ubicacion__direccion{
+                                font-size: $textSm;
+                                text-align: center;
+                        }
+
+                        iframe{
+                                width: 80%;
+                        }
+                }
+        }
+}

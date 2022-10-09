@@ -1,0 +1,687 @@
+/* tipo de letra */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Mobile index*/
+.contenedor-index{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "header"
+  "main"
+  "aside"
+  "footer";
+}
+
+.header{
+  grid-area: header;
+}
+
+.main{
+  grid-area: main;
+}
+
+.aside{
+  grid-area: aside;
+}
+
+.footer{
+  grid-area: footer;
+}
+
+
+/* Mobile index*/
+
+/* Mobile servicios */
+.contenedor-servicios{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "header"
+  "servicios"
+  "aside"
+  "footer";
+}
+
+.servicios{
+  grid-area: servicios;
+}
+
+/* Mobile servicios */
+
+/* Mobile carta */
+.contenedor-carta{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "header"
+  "filtros"
+  "carta"
+  "aside"
+  "footer";
+
+}
+
+.filtros{
+  grid-area: filtros;
+}
+
+.carta{
+  grid-area: carta;
+}
+/* Mobile Carta */
+
+
+/* Mobile galeria */
+.contenedor-galeria{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "header"
+  "galeria"
+  "aside"
+  "footer";
+}
+
+.galeria{
+  grid-area: galeria;
+}
+/* Mobile galeria */
+
+
+/* Mobile Contacto */
+.content-contacto{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "header"
+  "contacto"
+  "footer";
+}
+
+.contenedor-contacto{
+  grid-area: contacto;
+}
+/* Mobile Contacto */
+/* header */
+
+.header{
+  background-color: #F2F2F2;
+}
+
+.header__logo{
+  height: 7rem;
+}
+
+.header__navegador{
+  padding: 1rem;
+}
+
+.header__list-item{
+  margin: 0 3rem;
+  font-size: 2.3rem;
+}
+
+.header__enlace{
+  color:#CC5B86 ;
+}
+
+.header__enlace:hover{
+  color: #505B99;
+}
+
+/* header */
+
+/* footer */
+/* Footer */
+
+.footer{
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer__logo{
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  width: 60%;
+  text-align: center;
+
+}
+
+.logo__imagen{
+  margin: 0 auto;
+  width: 30%;
+}
+
+.red-social{
+  width: 50%;
+  margin: 0.5rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.red-social__titulo{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contain-red-social{
+  display: flex;
+  width: 75%;
+  margin: 1rem auto;
+  justify-content: space-between;
+}
+
+.red-social__enlace{
+  width: 20%;
+  text-align: center;
+  
+}
+
+.red-social__logo{
+  width: 50%;
+}
+/* footer */
+
+/* Index */
+
+
+.frase{
+  text-align: center;
+  background-color: #CC5B86;
+}
+
+.frase__titulo{
+  font-size: 3.5rem;
+  text-align: center;
+  margin: auto;
+  color: #FAB4C9;
+  padding: 1rem 0;
+}
+
+.objetivos{
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F2F2;
+  padding: 5rem;
+  background-image: url("../img/fondo-repetitivo.jpg");
+}
+
+.contenedor-objetivos{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 4rem auto;
+}
+
+
+
+.objetivos__titulo{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 2rem auto;
+}
+
+.objetivos__texto{
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 0 6rem;
+}
+
+
+.producto{
+  display: flex;
+  flex-direction: column;
+  background-color: #CC5B86;
+}
+
+.producto__titulo{
+  text-align: center;
+  font-size: xx-large;
+  padding: 2rem;
+
+}
+
+.productos-content{
+  margin: 2rem 0;
+}
+
+
+.producto__descripcion{
+  margin: 1rem;
+}
+
+.producto__imagen{
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  width:100%
+}
+
+.producto__nombre{
+  text-align: center;
+  background-color: #FAB4C9;
+  color: #505b99;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.producto__precio{
+  text-align: center;
+  color: #505b99;
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: #FAB4C9;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
+.aside{
+  background-color: #FAB4C9;
+}
+
+.aside-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.aside-content__img{
+  margin-bottom: 0.5rem;
+}
+
+.aside-content__titulo{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.aside-content__texto{
+  margin-top: 0;
+}
+
+
+
+
+
+
+/* index */
+
+/* servicios */
+
+.servicios{
+  background-color: #CC5B86;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.servicios__titulo{
+  font-size: xx-large;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+
+
+.servicios__contenedor{
+  padding-bottom: 1rem;
+}
+
+.servicio{
+  background-color: #FAB4C9;
+  display: flex;
+  flex-direction: column;
+  border: #505b99 solid thin;
+  border-radius: 1rem;
+  margin: 2rem 1.5rem;
+}
+
+
+.servicios__imagen{
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.servicios__titulo-servicio{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.servicios__descripcion{
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+/* servicios */
+
+/* carta */
+
+.filtros{
+  color: #FAB4C9;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filtros__categoria{
+  color: #CC5B86;
+  margin: 1rem 0;
+}
+
+.filtros__lista{
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+  justify-content: flex-start;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.filtros__enlace{
+  text-decoration: none;
+  color: #FAB4C9;
+
+}
+
+.filtros__enlace:hover{
+  font-weight: 600;
+}
+
+
+.carta{
+  display: flex;
+  flex-direction: column;
+  background-color: #CC5B86;
+  padding: 3rem;
+}
+
+
+.carta__titulo{
+  font-size: xx-large;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.carta-content{
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.carta__descripcion{
+  background-color: #FAB4C9;
+  border: #505b99 solid thin;
+  margin: 2rem 3rem;
+}
+
+.carta__descripcion:hover{
+border: #505b99 solid 0.5rem
+}
+
+.carta__imagen{
+  width:100%;
+}
+
+.carta__nombre{
+  text-align: center;
+  color: #505b99;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 1rem auto;
+}
+
+.carta__precio{
+  text-align: center;
+  color: #505b99;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 1rem auto;
+}
+/* carta */
+
+/* galeria */
+.galeria{
+  display: flex;
+  flex-direction: column;
+}
+
+.galeria-contenedor__titulo{
+  text-align: center;
+  background-color: #505b99;
+}
+
+.galeria__titulo{
+  font-size: 3.5rem;
+  text-align: center;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+
+.galeria__imagen{
+  width: 100%;
+}
+
+/* galeria */
+
+/* Contacto */
+.contenedor-contacto{
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-contenedor{
+  background-color: #CC5B86;
+  text-align: center;
+}
+
+.contacto-titulo-general{
+  font-size: 3.5rem;
+  text-align: center;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+.contacto{
+  display: flex;
+  flex-direction: column;
+  background-color: #FAB4C9;
+  justify-content: center;
+}
+
+.mensaje-contenedor{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contacto__titulo{
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 3rem;
+}
+
+.contacto__formulario{
+  width: 70%;
+  margin: 1rem auto;
+}
+
+.contacto__input{
+  width: 100%;
+  margin: 0.5rem auto;
+  padding: 1.2rem;
+  
+}
+
+.contacto__input::placeholder{
+  font-size: 1.6rem;
+}
+
+.contacto__input--size{
+  width: 50%;
+}
+
+
+
+
+.ubicacion{
+  display: flex;
+  flex-direction: column;
+}
+
+.ubicacion__titulo{
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 3rem;
+}
+
+.ubicacion__mapa{
+  margin: 1rem auto;
+}
+
+.ubicacion__direccion{
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* Contacto */
+
+
+/* -------Media Queries */
+
+/* Media Queria  */
+@media (min-width:768px){
+
+  /* Index */
+  .productos-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .objetivos{
+    padding: 10rem;
+  }
+
+  .aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  /* Index */
+  
+  /* Servicios */
+  .servicios__contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .servicio{
+    width: 30%;
+  }
+  /* Servicios */
+
+  /* Carta */
+  .contenedor-carta{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "filtros carta carta"
+    "aside aside aside"
+    "footer footer footer" ;
+  }
+  /* Carta */
+
+  /* Galeria */
+  .galeria__imagenes{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  /* Galeria */
+}
+
+@media(min-width:1200px){
+
+  /* index */
+  .productos-content{
+    justify-content: space-evenly;
+  }
+
+  .producto__descripcion{
+    width: 20%;
+  }
+
+  /* index */
+
+  /* Servicio */
+  .servicios__contenedor{
+    flex-wrap: wrap;
+  }
+  .servicio{
+    width: 25%;
+  }
+  /* Servicio */
+
+  /* carta */
+  .contenedor-carta{
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "header header header header"
+    "filtros carta carta carta"
+    "aside aside aside aside"
+    "footer footer footer footer" ;
+  }
+
+  .carta__descripcion{
+    width: 30%;
+  }
+  /* carta */
+
+  /* galeria */
+ .galeria__imagenes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+  /* galeria */
+  /* Contacto */
+  .contacto{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  /* Contacto */
+}
+
+
+
+
